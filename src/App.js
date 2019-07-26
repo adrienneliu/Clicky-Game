@@ -32,7 +32,7 @@ class App extends Component {
     <Wrapper>
       <div className="App">
           <h1>Hello</h1>
-
+{/* This maps through the array and displays the pictures in burger card */}
           {this.state.burgers.map(burger => (
           <BurgerCard
           removeBurger={this.removeBurger}
