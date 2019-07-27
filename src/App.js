@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import './App.css';
 import burgers from "./burgers.json";
-import Wrapper from "./components/Wrapper/index";
-import BurgerCard from "./components/BurgerCard/index";
+import BurgerCard from "./components/BurgerCard";
+
 
 
 //TODO: 
@@ -29,10 +29,11 @@ class App extends Component {
 
   render(){
   return (
-    <Wrapper>
-      <div className="App">
-          <h1>Hello</h1>
-{/* This maps through the array and displays the pictures in burger card */}
+    <div>
+      <h1>Hello</h1>
+      <div className="wrapper">
+          
+{/* This goes through the array and displays the info in burger card */}
           {this.state.burgers.map(burger => (
           <BurgerCard
           removeBurger={this.removeBurger}
@@ -44,7 +45,8 @@ class App extends Component {
           ))}
 
       </div>
-    </Wrapper>
+    </div>
+
   );
 }
 }

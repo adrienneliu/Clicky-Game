@@ -1,5 +1,8 @@
 import React from "react";
 
+// var shuffle = require('shuffle-array');
+
+
 function BurgerCard(props) {
   return (
     <div className="card">
@@ -7,7 +10,9 @@ function BurgerCard(props) {
           {/* inside of a CARD, there is an img-container, where we are setting up <img src> with url from burgers.json */}
         <img alt={props.name} src={props.image} 
         // adding onclick to <img src> removes burger
-            onClick={() => props.removeBurger(props.id)}/>
+            onClick={() => 
+            // shuffle(this.state.BurgerCard)}/>
+            props.removeBurger(props.id)}/>
             {console.log(props.id)}
       </div>
       <div className="content">
