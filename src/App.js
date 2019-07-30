@@ -20,31 +20,33 @@ class App extends Component {
     burgers,
     clicked: [],
     correctScore: 0,
+    message: ""
   };
 
   handleIncrement = id => {
     shuffle(this.state.burgers)
     console.log(id)
     if (this.state.clicked.includes(id)) {
-      this.setState({correctScore: 0, clicked: []})
-      console.log("me??", id)
-      console.log("oh no!")
-    } if (this.state.correctScore === 11) {
-      this.setState({correctScore: 0, clicked: []})
-      alert("You Win")
+      this.setState({correctScore: 0, clicked: [], message: "Aw, game over. Try again."})
+      // console.log("me??", id)
+      // console.log("oh no!")
+      // alert("Try again!")
+    } else if (this.state.correctScore === 11) {
+      this.setState({correctScore: 0, clicked: [], message: "You won!"})
+      // alert("You Win")
     }
     else {
       this.state.clicked.push(id)
-      console.log("id")
-      console.log(id)
-      this.setState({ correctScore: this.state.correctScore + 1 })
+      // console.log("id")
+      // console.log(id)
+      this.setState({ correctScore: this.state.correctScore + 1, message: "Yeah! Keep going!"})
     };
   }
 
   render() {
     return (
       <div className="wrapper">
-        <Header score={this.state.correctScore} >Clicky Game</Header>
+        <Header score={this.state.correctScore} message={this.state.message}>Clicky Game</Header>
         {/* <div className="container"> */}
         <div className="container">
           {/* This goes through the array and displays the info in burger card */}
@@ -57,7 +59,6 @@ class App extends Component {
               name={burger.name}
               image={burger.image}
             />))}
-
           {/* </div> */}
         </div>
       </div>

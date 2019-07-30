@@ -12,14 +12,14 @@ import "./style.css";
 
 function Header(props) {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-info" style ={{height: 100}}>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-warning" style ={{height: 100}}>
       <div className="header">
         <div className="row">
-        <div className="title">{props.children}</div></div>
-        <div className="row" className="scores">
-          Score: {props.score} 
+        <div className="col title">{props.children}</div>
+        <div className="col message">{props.message}</div>
+        <div className="col scores">Score: {props.score} </div>
         </div>
-      </div>
+</div>
     </nav>
   );
 }

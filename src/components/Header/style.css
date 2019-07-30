@@ -9,9 +9,18 @@
     width: 100%;
   }
   .title {
-    float: left;
+    /* float: left; */
+    font-family: 'Jockey One', sans-serif;
+    font-size:3rem;
   }
   
   .scores {
-    float: right;
+    /* float: right; */
+    font-family: 'Jockey One', sans-serif;
+    font-size:3rem;
+  }
+
+  .message{
+    font-family: 'Jockey One', sans-serif;
+    font-size:3rem;
   }
