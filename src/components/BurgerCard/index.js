@@ -1,15 +1,13 @@
 import React from "react";
+import "./style.css";
 
 function BurgerCard(props) {
 
   return (
     <div className="card" >
       <div className="img-container" onClick={() => 
-        // {props.selectBurger(props.id)}} >
-        {props.handleIncrement()}} >
+        {props.handleIncrement(props.id)}} >
         <img alt={props.name} src={props.image}/>
-          {/* // className="selectBurger"/> */}
-        {/* // handleBtnClick={this.handleBtnClick} /> */}
       </div>
 
     </div>

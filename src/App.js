@@ -22,49 +22,36 @@ class App extends Component {
     correctScore: 0,
   };
 
-handleIncrement = () => {
-  shuffle(this.state.burgers)
-  this.setState({correctScore: this.state.correctScore + 1})
-}
-
-  // handleCorrect = () => {
-  //   this.setState({
-  //     clicked: true
-  //   });
-  // }
-
-
-  // selectBurger = id => {
-
-
-  //   if (clicked.includes(id)) {
-  //     alert("you lost")
-  //     this.setState({ clicked: [], score: 0 })
-  //     this.loadNextCard();
-  //   } else {
-  //     clicked.push(id)
-  //     console.log(clicked)
-
-  //     if (this.highScore === 12) {
-  //       this.setState({ highScore: 12 })
-  //       alert("Winner");
-  //       return;
-  //     }
-  //    }
-  // };
+  handleIncrement = id => {
+    shuffle(this.state.burgers)
+    console.log(id)
+    if (this.state.clicked.includes(id)) {
+      this.setState({correctScore: 0, clicked: []})
+      console.log("me??", id)
+      console.log("oh no!")
+    } if (this.state.correctScore === 11) {
+      this.setState({correctScore: 0, clicked: []})
+      alert("You Win")
+    }
+    else {
+      this.state.clicked.push(id)
+      console.log("id")
+      console.log(id)
+      this.setState({ correctScore: this.state.correctScore + 1 })
+    };
+  }
 
   render() {
     return (
-      <div>
-        <Header score={this.state.correctScore} highscore={this.state.highScore}>Clicky Game</Header>
+      <div className="wrapper">
+        <Header score={this.state.correctScore} >Clicky Game</Header>
         {/* <div className="container"> */}
-        <div className="wrapper">
-
+        <div className="container">
           {/* This goes through the array and displays the info in burger card */}
           {this.state.burgers.map(burger => (
             <BurgerCard
               // selectBurger={this.selectBurger}
-              handleIncrement = {this.handleIncrement}
+              handleIncrement={this.handleIncrement}
               id={burger.id}
               key={burger.id}
               name={burger.name}

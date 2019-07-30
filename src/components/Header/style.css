@@ -5,6 +5,9 @@
     margin-bottom: 10px;
   }
   
+  .navbar{
+    width: 100%;
+  }
   .title {
     float: left;
   }
