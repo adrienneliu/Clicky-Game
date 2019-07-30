@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "C:\\Users\\iliua\\OneDrive\\Desktop\\my-class-repo\\exercise-activities"
+		},
+		{
+			"path": "C:\\Users\\iliua\\OneDrive\\Desktop\\my-class-repo\\course-content\\17-react"
+		},
+		{
+			"path": "C:\\Users\\iliua\\OneDrive\\Desktop\\my-class-repo\\course-content\\18-react"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "C:\\Users\\iliua\\OneDrive\\Desktop\\my-class-repo\\google-books"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "exercise-activities"
+	}
+}
