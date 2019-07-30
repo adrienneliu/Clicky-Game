@@ -1,9 +1,8 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import burgers from "./burgers.json";
 import BurgerCard from "./components/BurgerCard";
-
-
+import Header from "./components/Header";
 
 //TODO: 
 // navbar
@@ -12,42 +11,71 @@ import BurgerCard from "./components/BurgerCard";
 // pictures area
 // bottom div
 // footer
+var shuffle = require("shuffle-array")
 
 class App extends Component {
 
   //Set this.state.food to json array
   state = {
-    burgers
+    burgers,
+    clicked: [],
+    correctScore: 0,
   };
 
-  removeBurger = id => {
-    // Filter this.state.burgers for characters with an id not equal to the id being removed
-    const burgers = this.state.burgers.filter(burger => burger.id !== id);
-    // Set this.state.burgers equal to the new burgers array
-    this.setState({ burgers });
-  };
-
-  render(){
-  return (
-    <div>
-      <h1>Hello</h1>
-      <div className="wrapper">
-          
-{/* This goes through the array and displays the info in burger card */}
-          {this.state.burgers.map(burger => (
-          <BurgerCard
-          removeBurger={this.removeBurger}
-          id={burger.id}
-          key={burger.id}
-          name={burger.name}
-          image={burger.image}
-          />
-          ))}
-
-      </div>
-    </div>
-
-  );
+handleIncrement = () => {
+  shuffle(this.state.burgers)
+  this.setState({correctScore: this.state.correctScore + 1})
 }
+
+  // handleCorrect = () => {
+  //   this.setState({
+  //     clicked: true
+  //   });
+  // }
+
+
+  // selectBurger = id => {
+
+
+  //   if (clicked.includes(id)) {
+  //     alert("you lost")
+  //     this.setState({ clicked: [], score: 0 })
+  //     this.loadNextCard();
+  //   } else {
+  //     clicked.push(id)
+  //     console.log(clicked)
+
+  //     if (this.highScore === 12) {
+  //       this.setState({ highScore: 12 })
+  //       alert("Winner");
+  //       return;
+  //     }
+  //    }
+  // };
+
+  render() {
+    return (
+      <div>
+        <Header score={this.state.correctScore} highscore={this.state.highScore}>Clicky Game</Header>
+        {/* <div className="container"> */}
+        <div className="wrapper">
+
+          {/* This goes through the array and displays the info in burger card */}
+          {this.state.burgers.map(burger => (
+            <BurgerCard
+              // selectBurger={this.selectBurger}
+              handleIncrement = {this.handleIncrement}
+              id={burger.id}
+              key={burger.id}
+              name={burger.name}
+              image={burger.image}
+            />))}
+
+          {/* </div> */}
+        </div>
+      </div>
+
+    );
+  }
 }
 export default App;

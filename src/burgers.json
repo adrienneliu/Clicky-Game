@@ -2,61 +2,73 @@
     {
         "id": 1,
         "name": "Kuchi Kopi",
-        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/c/ce/Kuchi.png/revision/latest/window-crop/width/160/x-offset/0/y-offset/26/window-width/686/window-height/515?cb=20160929123954"
+        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/c/ce/Kuchi.png/revision/latest/window-crop/width/160/x-offset/0/y-offset/26/window-width/686/window-height/515?cb=20160929123954",
+        "clicked": false 
     },
     {
         "id": 2,
         "name": "Tina ",
-        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/6/6e/Tina_render.png/revision/latest/top-crop/width/200/height/150?cb=20130113192209"
+        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/6/6e/Tina_render.png/revision/latest/top-crop/width/200/height/150?cb=20130113192209",
+        "clicked": false 
     },
 
     {
         "id": 3,
         "name": "Louise ",
-        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/b/b9/Louise_render.png/revision/latest/top-crop/width/200/height/150?cb=20130113075349"
+        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/b/b9/Louise_render.png/revision/latest/top-crop/width/200/height/150?cb=20130113075349",
+        "clicked": false 
     },
     {
         "id": 4,
         "name": "Bob",
-        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/3/3e/Bobbelcher2.png/revision/latest/top-crop/width/200/height/150?cb=20130114075133"
+        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/3/3e/Bobbelcher2.png/revision/latest/top-crop/width/200/height/150?cb=20130114075133",
+        "clicked": false 
     },
     {
         "id": 5,
         "name": "Linda ",
-        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/b/b7/Lindab.png/revision/latest/top-crop/width/200/height/150?cb=20130113071354"
+        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/b/b7/Lindab.png/revision/latest/top-crop/width/200/height/150?cb=20130113071354",
+        "clicked": false 
     },
     {
         "id": 6,
         "name": "Gene",
-        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/b/b7/Gene_Belcher.png/revision/latest/top-crop/width/200/height/150?cb=20130114043308"
+        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/b/b7/Gene_Belcher.png/revision/latest/top-crop/width/200/height/150?cb=20130114043308",
+        "clicked": false 
     },
     {
         "id": 7,
         "name": "Teddy",
-        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/5/5e/Teddy.png/revision/latest/top-crop/width/200/height/150?cb=20130305230745"
+        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/5/5e/Teddy.png/revision/latest/top-crop/width/200/height/150?cb=20130305230745",
+        "clicked": false 
     },    {
         "id": 8,
         "name": "Jimmy Pesto",
-        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/b/b2/Jimmyjrmain.jpg/revision/latest/top-crop/width/200/height/150?cb=20110905161556"
+        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/b/b2/Jimmyjrmain.jpg/revision/latest/top-crop/width/200/height/150?cb=20110905161556",
+        "clicked": false 
     },
     {
         "id": 9,
         "name": "Marshmallow",
-        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/5/5b/Marshmellow.jpg/revision/latest/top-crop/width/200/height/150?cb=20150717140656"
+        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/5/5b/Marshmellow.jpg/revision/latest/top-crop/width/200/height/150?cb=20150717140656",
+        "clicked": false 
     },
     {
         "id": 10,
         "name": "Mr. Ambrose",
-        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/1/17/Mr_Ambrose.jpg/revision/latest/top-crop/width/200/height/150?cb=20170213175530"
+        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/1/17/Mr_Ambrose.jpg/revision/latest/top-crop/width/200/height/150?cb=20170213175530",
+        "clicked": false 
     },
     {
         "id": 11,
         "name": "Regular Size Rudy",
-        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/8/8d/Regular-Rudy.jpg/revision/latest/top-crop/width/200/height/150?cb=20160410170923"
+        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/8/8d/Regular-Rudy.jpg/revision/latest/top-crop/width/200/height/150?cb=20160410170923",
+        "clicked": false 
     },
     {
         "id": 12,
         "name": "Pesto Twins",
-        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/b/bb/Andy_and_Ollie_Pesto.png/revision/latest/top-crop/width/200/height/150?cb=20130306050002"
+        "image": "https://vignette.wikia.nocookie.net/bobsburgerpedia/images/b/bb/Andy_and_Ollie_Pesto.png/revision/latest/top-crop/width/200/height/150?cb=20130306050002",
+        "clicked": false 
     }
 ]
